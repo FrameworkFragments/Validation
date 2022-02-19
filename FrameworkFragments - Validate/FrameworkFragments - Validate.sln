@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.Validation", "FrameworkFragments.Validation\FrameworkFragments.Validation.csproj", "{800D9D18-989A-4911-B902-F3C3637E3EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.Validation.Test", "FrameworkFragments.Validation.Test\FrameworkFragments.Validation.Test.csproj", "{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4C069D3-F331-4EEA-B63E-275E57225B89}
+	EndGlobalSection
+EndGlobal
