@@ -25,5 +25,14 @@ namespace FrameworkFragments.Validation
 			    "A required reference is missing for (" + String.Join(", ", fieldNames) + ")"
 		    );
         }
+
+	    public IValidationFailure RequiredValue(IEnumerable<string> fieldNames)
+	    {
+			return new ValidationFailure(
+				ValidationType.RequiredValue,
+				@"REQUIRED_VALUE_MISSING",
+				"A required VALUE is missing for (" + String.Join(", ", fieldNames) + ")"
+			);
+		}
     }
 }
