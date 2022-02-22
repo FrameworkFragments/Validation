@@ -34,5 +34,14 @@ namespace FrameworkFragments.Validation
 				"A required VALUE is missing for (" + String.Join(", ", fieldNames) + ")"
 			);
 		}
+
+	    public IValidationFailure ValueRange(IEnumerable<string> fieldNames)
+	    {
+			return new ValidationFailure(
+				ValidationType.ValueRange,
+				@"VALUE_OUT_OF_RANGE",
+				"Value(s) are out of range for (" + String.Join(", ", fieldNames) + ")"
+			);
+		}
     }
 }
