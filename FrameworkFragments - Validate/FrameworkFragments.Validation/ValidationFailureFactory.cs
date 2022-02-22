@@ -52,5 +52,14 @@ namespace FrameworkFragments.Validation
 				"Incorrect value type for (" + String.Join(", ", fieldNames) + ")"
 			);
 		}
+
+	    public IValidationFailure BusinessLogic(IEnumerable<string> fieldNames)
+	    {
+			return new ValidationFailure(
+				ValidationType.BusinessLogic,
+				@"INVALID_BUSINESS_LOGIC",
+				"Invalid business logic for (" + String.Join(", ", fieldNames) + ")"
+			);
+		}
     }
 }
