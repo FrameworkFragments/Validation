@@ -31,7 +31,7 @@ namespace FrameworkFragments.Validation
 			return new ValidationFailure(
 				ValidationType.RequiredValue,
 				@"REQUIRED_VALUE_MISSING",
-				"A required VALUE is missing for (" + String.Join(", ", fieldNames) + ")"
+				"A required Value is missing for (" + String.Join(", ", fieldNames) + ")"
 			);
 		}
 
@@ -40,7 +40,16 @@ namespace FrameworkFragments.Validation
 			return new ValidationFailure(
 				ValidationType.ValueRange,
 				@"VALUE_OUT_OF_RANGE",
-				"Value(s) are out of range for (" + String.Join(", ", fieldNames) + ")"
+				"Value is out of range for (" + String.Join(", ", fieldNames) + ")"
+			);
+		}
+
+	    public IValidationFailure ValueType(IEnumerable<string> fieldNames)
+	    {
+			return new ValidationFailure(
+				ValidationType.ValueType,
+				@"INCORRECT_VALUE_TYPE",
+				"Incorrect value type for (" + String.Join(", ", fieldNames) + ")"
 			);
 		}
     }
