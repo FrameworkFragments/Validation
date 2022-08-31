@@ -1,7 +1,7 @@
 Feature: Validation Result Builder
 Builder to aggregate together validation outcomes and return them as a single object.
 
-    Scenario: Return an empty validation result
+    Scenario: Simple Passing Validation
         Given a ValidationResultBuilder
         And the following validation is added
           | ResultType | Label              | Description |
@@ -9,3 +9,12 @@ Builder to aggregate together validation outcomes and return them as a single ob
         Then the current validation result type is Pass
         And the current validation label is "FULL_NAME_REQUIRED"
         And the current validation description is null
+        
+    Scenario: Simple Failing Validation
+        Given a ValidationResultBuilder
+        And the following validation is added
+          | ResultType | Label              | Description |
+          | Fail       | FULL_NAME_REQUIRED | Test Description |
+        Then the current validation result type is Pass
+        And the current validation label is "FULL_NAME_REQUIRED"
+        And the current validation description is "Test Description"

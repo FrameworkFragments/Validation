@@ -62,4 +62,10 @@ public class Steps
   {
     Assert.IsEmpty(_context.CurrentValidationResult.Description);
   }
+
+  [Then(@"the current validation description is ""(.*)""")]
+  public void ThenTheCurrentValidationDescriptionIs(string description)
+  {
+    Assert.AreEqual(description, _context.CurrentValidationResult.Description);
+  }
 }

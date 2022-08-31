@@ -75,12 +75,12 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Return an empty validation result")]
-        public virtual void ReturnAnEmptyValidationResult()
+        [NUnit.Framework.DescriptionAttribute("Create a single simple passing validation result")]
+        public virtual void CreateASingleSimplePassingValidationResult()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Return an empty validation result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a single simple passing validation result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 4
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -123,6 +123,60 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
 #line hidden
 #line 11
         testRunner.And("the current validation description is null", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create a single simple failing validation result")]
+        public virtual void CreateASingleSimpleFailingValidationResult()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a single simple failing validation result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 13
+    this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 14
+        testRunner.Given("a ValidationResultBuilder", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "ResultType",
+                            "Label",
+                            "Description"});
+                table2.AddRow(new string[] {
+                            "Fail",
+                            "FULL_NAME_REQUIRED",
+                            "Test Description"});
+#line 15
+        testRunner.And("the following validation is added", ((string)(null)), table2, "And ");
+#line hidden
+#line 18
+        testRunner.Then("the current validation result type is Pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 19
+        testRunner.And("the current validation label is \"FULL_NAME_REQUIRED\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+        testRunner.And("the current validation description is \"Test Description\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
