@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.Validation", "FrameworkFragments.Validation\FrameworkFragments.Validation.csproj", "{800D9D18-989A-4911-B902-F3C3637E3EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.Validation.Test", "FrameworkFragments.Validation.Test\FrameworkFragments.Validation.Test.csproj", "{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.Validation.Test", "FrameworkFragments.Validation.Test\FrameworkFragments.Validation.Test.csproj", "{3806BAAB-CBE8-4466-85CA-8ECA0E6B25BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800D9D18-989A-4911-B902-F3C3637E3EE7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F8CACC3-3295-4B68-BECE-17A5EF66C1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3806BAAB-CBE8-4466-85CA-8ECA0E6B25BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3806BAAB-CBE8-4466-85CA-8ECA0E6B25BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3806BAAB-CBE8-4466-85CA-8ECA0E6B25BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3806BAAB-CBE8-4466-85CA-8ECA0E6B25BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
