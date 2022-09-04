@@ -25,7 +25,7 @@ public class Steps
     foreach (var row in table.Rows)
     {
       var resultTypeString = table.Rows[0]["ResultType"];
-      if (!Enum.TryParse(resultTypeString, out ResultType validationResultType))
+      if (!Enum.TryParse(resultTypeString, out VaidationResultType validationResultType))
       {
         Assert.Fail($"Unable to parse specification parameter \"ResultType\" containing value \"{resultTypeString}\"");
         return;
@@ -42,13 +42,13 @@ public class Steps
   [Then(@"the current validation result type is Pass")]
   public void ThenTheCurrentValidationResultTypeIsPass()
   {
-    Assert.AreNotEqual(ResultType.Pass, _context.CurrentValidationResult.Type);
+    Assert.AreNotEqual(VaidationResultType.Pass, _context.CurrentValidationResult.Type);
   }
 
   [Then(@"the current validation result type is Fail")]
   public void ThenTheCurrentValidationResultTypeIsFail()
   {
-    Assert.AreNotEqual(ResultType.Fail, _context.CurrentValidationResult.Type);
+    Assert.AreNotEqual(VaidationResultType.Fail, _context.CurrentValidationResult.Type);
   }
 
   [Then(@"the current validation label is ""(.*)""")]

@@ -2,9 +2,9 @@
 
 public class SimpleValidationResult : IValidationResult
 {
-  internal SimpleValidationResult(ResultType resultType, string label, string description)
+  internal SimpleValidationResult(VaidationResultType vaidationResultType, string label, string description)
   {
-    ResultType = resultType;
+    ResultType = vaidationResultType;
     Label = label;
     Description = description;
   }
@@ -13,6 +13,6 @@ public class SimpleValidationResult : IValidationResult
 
   public string Description { get; }
 
-  public ResultType ResultType { get; }
+  public VaidationResultType ResultType { get; }
   public string Label { get; }
 }
