@@ -2,25 +2,8 @@
 
 public class Context
 {
-  private Validation.ValidationGroupBuilder? _validationGroupBuilder;
-  internal bool HasValidationResultBuilder => null != _validationGroupBuilder;
+  internal ValidationResults.Builder? ValidationResultsBuilder { get; set; }
 
-  internal Validation.ValidationGroupBuilder ValidationGroupBuilder
-  {
-    get => _validationGroupBuilder!;
-    set => _validationGroupBuilder = value;
-  }
-
-  private List<IValidationResult>? _validationResults;
-
-  public IList<IValidationResult> ValidationResults
-  {
-    get { return _validationResults ??= new List<IValidationResult>(); }
-  }
-
-  public IValidationResult CurrentValidationResult
-  {
-    get => ValidationResults.Last();
-    set => ValidationResults.Add(value);
-  }
+  public IValidationResults? ValidationResults { get; set; }
+  public IValidationResult? CurrentValidationResult { get; set; }
 }

@@ -1,21 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <PackageId>FrameworkFragments.Validation</PackageId>
-    <AssemblyName>FrameworkFragments.Validation</AssemblyName>
-    <Company>FrameworkFragments</Company>
-    <Version>0.1.0</Version>
     <Authors>Adam Lenda</Authors>
-    <Title>Framework Fragments Validations Library</Title>
-    <PackageDescription>Provides the ValidationResultFactory and associated interfaces and types. This package can be used independently.</PackageDescription>
-    <RepositoryUrl>https://github.com/FrameworkFragments/Validation</RepositoryUrl>
+    <AssemblyName>FrameworkFragments.Validation</AssemblyName>
+    <AssemblyVersion>0.2.0</AssemblyVersion>
+    <Company>FrameworkFragments</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IsPackable>True</IsPackable>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <LangVersion>latestmajor</LangVersion>
     <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <PackageDescription>Provides the ValidationResultFactory and associated interfaces and types. This package can be used independently.</PackageDescription>
+    <PackageId>FrameworkFragments.Validation</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/FrameworkFragments/Validation</RepositoryUrl>
+    <TargetFramework>net6.0</TargetFramework>
+    <Title>Framework Fragments Validations Library</Title>
+    <Version>0.2.0</Version>
   </PropertyGroup>
 
 </Project>

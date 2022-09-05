@@ -75,12 +75,12 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Create a single simple passing validation result")]
-        public virtual void CreateASingleSimplePassingValidationResult()
+        [NUnit.Framework.DescriptionAttribute("Simple Passing Validation")]
+        public virtual void SimplePassingValidation()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a single simple passing validation result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Simple Passing Validation", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 4
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -116,12 +116,18 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
         testRunner.And("the following validation is added", ((string)(null)), table1, "And ");
 #line hidden
 #line 9
-        testRunner.Then("the current validation result type is Pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+        testRunner.When("the ValidationResults are Built", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 10
-        testRunner.And("the current validation label is \"FULL_NAME_REQUIRED\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+        testRunner.Then("the current ValidationResults has no errors", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 11
+        testRunner.Then("the current validation result type is Pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 12
+        testRunner.And("the current validation label is \"FULL_NAME_REQUIRED\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 13
         testRunner.And("the current validation description is null", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
@@ -129,13 +135,13 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Create a single simple failing validation result")]
-        public virtual void CreateASingleSimpleFailingValidationResult()
+        [NUnit.Framework.DescriptionAttribute("Simple Failing Validation")]
+        public virtual void SimpleFailingValidation()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a single simple failing validation result", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 13
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Simple Failing Validation", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 15
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -155,7 +161,7 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
             else
             {
                 this.ScenarioStart();
-#line 14
+#line 16
         testRunner.Given("a ValidationResultBuilder", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -166,16 +172,22 @@ namespace FrameworkFragments.Validation.Test.ValidationResultFactory
                             "Fail",
                             "FULL_NAME_REQUIRED",
                             "Test Description"});
-#line 15
+#line 17
         testRunner.And("the following validation is added", ((string)(null)), table2, "And ");
 #line hidden
-#line 18
+#line 20
+        testRunner.When("the ValidationResults are Built", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 21
+        testRunner.Then("the current ValidationResults has 1 error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 22
         testRunner.Then("the current validation result type is Pass", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 19
+#line 23
         testRunner.And("the current validation label is \"FULL_NAME_REQUIRED\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 20
+#line 24
         testRunner.And("the current validation description is \"Test Description\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
