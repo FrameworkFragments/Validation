@@ -1,4 +1,4 @@
-﻿namespace FrameworkFragments.Validation;
+﻿namespace FrameworkFragments.Validation.Result;
 
 public class ValidationResult : IValidationResult
 {

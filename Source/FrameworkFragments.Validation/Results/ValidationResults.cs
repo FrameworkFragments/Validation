@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using FrameworkFragments.Validation.Result;
 
-namespace FrameworkFragments.Validation;
+namespace FrameworkFragments.Validation.Results;
 
 public class ValidationResults : IValidationResults
 {

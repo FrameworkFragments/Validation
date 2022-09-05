@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using FrameworkFragments.Validation.Result;
 
-namespace FrameworkFragments.Validation;
+namespace FrameworkFragments.Validation.Results;
 
 public interface IValidationResults : IReadOnlyCollection<IValidationResult>
 {

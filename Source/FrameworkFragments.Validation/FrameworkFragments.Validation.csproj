@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Authors>Adam Lenda</Authors>
     <AssemblyName>FrameworkFragments.Validation</AssemblyName>
-    <AssemblyVersion>0.2.0</AssemblyVersion>
+    <AssemblyVersion>0.2.1</AssemblyVersion>
     <Company>FrameworkFragments</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IsPackable>True</IsPackable>
@@ -17,7 +17,7 @@
     <RepositoryUrl>https://github.com/FrameworkFragments/Validation</RepositoryUrl>
     <TargetFramework>net6.0</TargetFramework>
     <Title>Framework Fragments Validations Library</Title>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
   </PropertyGroup>
 
 </Project>

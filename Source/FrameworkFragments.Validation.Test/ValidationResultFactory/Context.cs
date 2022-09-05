@@ -1,4 +1,7 @@
-﻿namespace FrameworkFragments.Validation.Test.ValidationResultFactory;
+﻿using FrameworkFragments.Validation.Result;
+using FrameworkFragments.Validation.Results;
+
+namespace FrameworkFragments.Validation.Test.ValidationResultFactory;
 
 public class Context
 {
